@@ -1,0 +1,26 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "server",
+  "main": "./src/app.js",
+  "scripts": {
+    "build": "babel -w src/ -d build/ --source-maps",
+    "dev": "nodemon node build/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-0"
+    ]
+  },
+  "author": "jack",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "express": "^4.16.3",
+    "formidable": "^1.2.1",
+    "nodemon": "^1.18.3"
+  }
+}
